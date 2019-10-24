@@ -7,6 +7,7 @@
     <title>Complejo Cultural Atlas</title>
     <link rel="icon" href="https://ccatlas.org.ar/wp-content/themes/atlas/inc/assets/images/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./Scripts/Formulario.js"></script>
     
 </head>
 <body>
@@ -33,6 +34,32 @@
                 
               </label>
         </div>
+        <h2 class="FormularioTitulo" style="height: 1em;">Contanos un poco mas sobre tu Evento</h2>   
+        <div class="FormularioContenedor" >
+            <select class="FormularioInput1"name="Tipo" onchange="MostrarOtro('Otro', this)" >
+                <option disabled selected style="color: white;">Tipo de Evento</option>
+                <option value="Conferencia">Conferencia</option>
+                <option value="Taller">Taller</option>
+                <option value="Muestra">Muestra</option>
+                <option value="Recital">Recital</option>
+                <option value="Espectaculo">Espectaculo</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Convencion">Convencion</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <input class="FormularioInput2 Otro" placeholder="Otro" type="text" id="Otro" name="Otro">
+            
+
+        </div>
+        <div class="FormularioContenedor">       
+                <input class="FormularioInput1" placeholder="/ / " type="date" name="Fecha">
+                <select  class="FormularioInput2" placeholder="Cantidad de Asistentes" name="Asistentes">
+                    <option value="20">Hasta 20 Personas</option>
+                    <option value="50">Hasta 50 Personas</option>
+                    <option value="100">Hasta 100 Personas</option>
+                    <option value=">100">Mas de 100 Personas</option>
+                </select>
+        </div>
         <h2 class="FormularioTitulo" style="height: 1em;">Elegi Tu Espacio</h2>   
         <div class="FormularioContenedor">    
                <button type="button" class="FormularioEspacioBoton" name="Espacios">
@@ -48,16 +75,7 @@
                     <img class="BotonImagen" src="./Assets/4.png" >
                 </button>
         </div>
-        <h2 class="FormularioTitulo" style="height: 1em;">Contanos un poco mas sobre tu Evento</h2>   
-        <div class="FormularioContenedor">       
-                <input class="FormularioInput1" placeholder="/ / " type="date" name="Fecha">
-                <select  class="FormularioInput2" placeholder="Cantidad de Asistentes" name="Asistentes">
-                    <option value="20">Hasta 20 Personas</option>
-                    <option value="50">Hasta 50 Personas</option>
-                    <option value="100">Hasta 100 Personas</option>
-                    <option value=">100">Mas de 100 Personas</option>
-                </select>
-        </div>
+      
         <button  class="FormularioBoton" type="submit">Enviar</button>
     </section>
 </body>
