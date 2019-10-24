@@ -1,0 +1,35 @@
+.bubble {
+    height: 100px;
+    width: 90%;
+	position: relative;
+}
+.bubbleContenido{
+    word-wrap: none;
+    flex-wrap: wrap ;
+    font-size: 17px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+
+}
+
+.bubble, .bubbleContenido{
+    background: #efefef;
+    border-radius: 5px;
+    border:none;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 38px solid transparent;
+	border-top-color: #efefef;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: 300px;
+	margin-bottom: -38px;
+}

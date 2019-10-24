@@ -37,7 +37,7 @@ body{
     
 }
 
-.FormularioInput, .FormularioInput1, .FormularioInput2{
+.FormularioInput, .FormularioInput1, .FormularioInput2,.FormularioCheckbox{
     color: grey;
     padding: 0%;
     height: 2em;
@@ -85,6 +85,16 @@ body{
 .Otro{
     display: none;
 }
+.FormularioOpcion{
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+.FormularioCheckbox{
+    width: 30%;
+}
 
 @media  (max-width: 600px) {
 
@@ -95,6 +105,11 @@ body{
     .FormularioEspacioBoton{
         width: 25%;
         height: auto;
+    }
+    .FormularioOpcion{
+        width: 70%;
+        margin: 0% 15% 0% 20% ;
+
     }
   }
   
