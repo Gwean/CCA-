@@ -2,10 +2,12 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="./Styles/FormularioStyle.css">
+    <link rel="stylesheet" href="./Styles/SwitchStyle.css">
     <meta charset="UTF-8">
     <title>Complejo Cultural Atlas</title>
     <link rel="icon" href="https://ccatlas.org.ar/wp-content/themes/atlas/inc/assets/images/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <section class="ImagenContenedor">
@@ -20,12 +22,16 @@
                 <input class="FormularioInput" placeholder="Apellido(s)" type="text" name="Apellido">
         </div>
         <div class="FormularioContenedor">       
-                <input class="FormularioInput" style="width: 50%;" placeholder="Email" type="text" name="Email">
-                <input class="FormularioInput" style="width: 30%;" placeholder="Celular" type="number" name="Celular">
+                <input class="FormularioInput1"  placeholder="Email" type="text"  id="Email" name="Email">
+                <input class="FormularioInput2"  placeholder="Celular" type="number" id="Celular" name="Celular">
         </div>
-        <div class="FormularioContenedor">       
-               <h2>Te gustaria que nos contactemos por Whatsapp?</h2>
-               <input type="switch">
+        <div class="FormularioContenedor" style="justify-content:center; margin-bottom: 3%;">       
+               <h2 class="WhatsappTitle">Te gustaria que nos contactemos por Whatsapp?</h2>
+               <label class="switch" style=" float:left; margin: 1% 1% 0% 1%">
+                <input type="checkbox" id="Whatsapp">
+                <span class="slider round"></span>
+                
+              </label>
         </div>
         <h2 class="FormularioTitulo" style="height: 1em;">Elegi Tu Espacio</h2>   
         <div class="FormularioContenedor">    
@@ -44,8 +50,8 @@
         </div>
         <h2 class="FormularioTitulo" style="height: 1em;">Contanos un poco mas sobre tu Evento</h2>   
         <div class="FormularioContenedor">       
-                <input class="FormularioInput" style="width: 50%;" placeholder="/ / " type="date" name="Fecha">
-                <select  class="FormularioInput" style="width: 30%;" placeholder="Cantidad de Asistentes" name="Asistentes">
+                <input class="FormularioInput1" placeholder="/ / " type="date" name="Fecha">
+                <select  class="FormularioInput2" placeholder="Cantidad de Asistentes" name="Asistentes">
                     <option value="20">Hasta 20 Personas</option>
                     <option value="50">Hasta 50 Personas</option>
                     <option value="100">Hasta 100 Personas</option>

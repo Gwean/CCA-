@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 }
+
 body{
     width: 100%;
     margin: 0% auto;
@@ -28,31 +29,20 @@ body{
 }
 
 .FormularioContenedor{
-    display: -webkit-flex; 
-    -webkit-flex-wrap: wrap; 
-    display: flex;  
-    flex-wrap: wrap;
     margin: 3% 1% 0% 1%;
+    display: flex;
     justify-content: space-around;
     
 }
 
-.FormularioInput, .FormularioInput1, .FormularioInput2{
+.FormularioInput{
+    width: 40%;
     padding: 0%;
     height: 2em;
     font-size: 20px;
     text-align: center;
     border: none;
     border-bottom: 1px solid grey ;
-}
-.FormularioInput{
-    width: 40%;
-} 
-.FormularioInput1{
-    width: 50%;
-} 
-.FormularioInput2{
-    width: 30%;
 }
 
 .FormularioEspacioBoton{
@@ -81,23 +71,3 @@ body{
     height: 2.5em;
     border-radius: 5px;
 }
-
-@media  (max-width: 600px) {
-
-    .FormularioInput, .FormularioInput1, .FormularioInput2{
-        width:90%;
-        min-width: 250px;
-    }
-    .FormularioEspacioBoton{
-        width: 25%;
-        height: auto;
-    }
-  }
-  
-@media  (min-width: 600px) {
-
-    .FormularioEspacioBoton{
-        width: 25%;
-        height: auto;
-    }
-  }
