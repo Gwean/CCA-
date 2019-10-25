@@ -2,6 +2,7 @@
     height: 100px;
     width: 90%;
 	position: relative;
+	margin-bottom: 5%;
 }
 .bubbleContenido{
     word-wrap: none;
@@ -33,3 +34,10 @@
 	margin-left: 300px;
 	margin-bottom: -38px;
 }
+
+@media  (max-width: 600px) {
+
+    .bubble{
+		margin-top: 5%;
+	}
+  }
