@@ -26,6 +26,9 @@ body{
     width: 100%;
     height: 1.5em;
 }
+.WhatsappTitle{
+    text-align: center;
+}
 
 .FormularioContenedor{
     display: -webkit-flex; 
