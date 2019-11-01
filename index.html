@@ -59,12 +59,14 @@
                     <select class="FormularioInput1" name="Tipo" onchange="MostrarOtro('Otro', this)">
                         <option disabled selected style="color: white;">Tipo de Evento</option>
                         <option value="Conferencia">Conferencia</option>
-                        <option value="Taller">Taller</option>
-                        <option value="Muestra">Muestra</option>
-                        <option value="Recital">Recital</option>
-                        <option value="Espectaculo">Espectáculo</option>
-                        <option value="Reunion">Reunión</option>
                         <option value="Convencion">Convención</option>
+                        <option value="Espectaculo">Espectáculo</option>
+                        <option value="Muestra">Muestra</option>
+                        <option value="MuestraLibro">Muestra de Libro</option>
+                        <option value="Proyeccion">Proyección</option>
+                        <option value="Recital">Recital</option>
+                        <option value="Reunion">Reunión</option>
+                        <option value="Taller">Taller</option>
                         <option value="Otro">Otro</option>
                     </select>
                     <input class="FormularioInput2 Otro" placeholder="Otro Tipo de Evento" type="text" id="Otro"
@@ -73,12 +75,8 @@
                 <h2 class="FormularioTitulo" style="height: 1em;">Requerimientos Técnicos</h2>
                 <div class="FormularioContenedor" style="justify-content: center;">
                     <div class="FormularioOpcion">
-                        <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Microfono">
-                        <p class="CheckboxLabel">Micrófono</p>
-                    </div>
-                    <div class="FormularioOpcion">
-                        <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Proyector">
-                        <p class="CheckboxLabel">Proyector</p>
+                        <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Asientos">
+                        <p class="CheckboxLabel">Asientos</p>
                     </div>
                     <div class="FormularioOpcion">
                         <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Computadoras">
@@ -89,8 +87,12 @@
                         <p class="CheckboxLabel">Escenario</p>
                     </div>
                     <div class="FormularioOpcion">
-                        <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Asientos">
-                        <p class="CheckboxLabel">Asientos</p>
+                        <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Microfono">
+                        <p class="CheckboxLabel">Micrófono</p>
+                    </div>
+                    <div class="FormularioOpcion">
+                        <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Proyector">
+                        <p class="CheckboxLabel">Proyector</p>
                     </div>
                     <div class="FormularioOpcion">
                         <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Otro"
