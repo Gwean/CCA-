@@ -12,7 +12,6 @@
         type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="./Scripts/Formulario.js"></script>
-
 </head>
 
 <body>
@@ -56,7 +55,7 @@
                     </select>
                 </div>
                 <div class="FormularioContenedor">
-                    <select class="FormularioInput1" name="Tipo" onchange="MostrarOtro('Otro', this)">
+                    <select class="FormularioInput1" name="Tipo" onchange="MostrarOtroSelect('Otro', this)">
                         <option disabled selected style="color: white;">Tipo de Evento</option>
                         <option value="Conferencia">Conferencia</option>
                         <option value="Convencion">Convención</option>
@@ -96,7 +95,7 @@
                     </div>
                     <div class="FormularioOpcion">
                         <input class="FormularioCheckbox" type="checkbox" name="RequTec" value="Otro"
-                            onchange="MostrarOtro('Otro1', this)">
+                            onchange="MostrarOtroCheckbox('Otro1', this)">
                         <p class="CheckboxLabel">Otro</p>
                     </div>
                     <input class="FormularioInput1 Otro" placeholder="Otro Requerimiento Técnico" type="text" id="Otro1"
@@ -106,16 +105,20 @@
             <div class="Card">
                 <h2 class="FormularioTitulo">Elegi Tu Espacio</h2>
                 <div class="FormularioContenedor" style=" margin: 0% 5% 0% 5%">
-                    <button type="button" class="FormularioEspacioBoton" name="Espacios">
+                    <button type="button" class="FormularioEspacioBoton" id="Multimedia" name="Espacios" value="0"
+                        onclick="Clickeado('Multimedia')">
                         <img class="BotonImagen" src="./Assets/1.png">
                     </button>
-                    <button type="button" class="FormularioEspacioBoton" name="Espacios">
+                    <button type="button" class="FormularioEspacioBoton" id="Estudio" name="Espacios" value="0"
+                        onclick="Clickeado('Estudio')">
                         <img class="BotonImagen" src="./Assets/2.png">
                     </button>
-                    <button type="button" class="FormularioEspacioBoton" name="Espacios">
+                    <button type="button" class="FormularioEspacioBoton" id="Escenario" name="Espacios" value="0"
+                        onclick="Clickeado('Escenario')">
                         <img class="BotonImagen" src="./Assets/3.png">
                     </button>
-                    <button type="button" class="FormularioEspacioBoton" name="Espacios">
+                    <button type="button" class="FormularioEspacioBoton" id="Cursos" name="Espacios" value="0"
+                        onclick="Clickeado('Cursos')">
                         <img class="BotonImagen" src="./Assets/4.png">
                     </button>
                 </div>
